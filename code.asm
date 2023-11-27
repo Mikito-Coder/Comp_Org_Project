@@ -29,7 +29,7 @@ main:
         move $t0, $v0
         
         j while
-
+     
      exit:
         move $a0, $v0
         jal fib
@@ -42,5 +42,9 @@ main:
 	li $v0, 1
         move $a0, $t0
         syscall
+     
+     li $v0, 10
+     syscall
+
         
      
