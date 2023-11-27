@@ -59,6 +59,10 @@ fib:
     beq $t3, 0, done #condition to check if n== 0 
     bne $t3, 1, else #condition to check n!=1
 
+else: #if n!=1
+    li $v0,1
+    move $a0, $t0 #print fn == 0
+    syscall
 
         
      
