@@ -69,6 +69,12 @@ else: #if n!=1
     li $v0,1
     move $a0, $t1 #print fn1 == 1
     syscall
+    li $v0, 4        
+    la $a0, newline #print newline
+    syscall 
+    li $v0,1
+    move $a0, $t2 #print fn2 == 1
+    syscall
 
         
      
