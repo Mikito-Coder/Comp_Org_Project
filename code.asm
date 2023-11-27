@@ -79,5 +79,14 @@ else: #if n!=1
     la $a0, newline #print newline
     syscall
 
+loop:
+    beq $t5, $t4, done # for i in range $t4, $t5 == i.
+    add $t0, $t1, $t2  #fn = fn1 + fn2
+    add $t1, $zero, $t2  #fn1 = fn2
+    add $t2, $zero, $t0   #fn2 = fn
+    li $v0,1
+    move $a0, $t0   #trying to print fn
+    syscall   #printing fn
+
         
      
