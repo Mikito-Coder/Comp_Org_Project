@@ -93,5 +93,10 @@ loop:
     addi $t5, $t5, 1 #increase i by 1
     j loop #jump back to loop 
 
+done:
+    li $v0, 10 #terminates program
+    syscall
+
+
         
      
