@@ -87,6 +87,11 @@ loop:
     li $v0,1
     move $a0, $t0   #trying to print fn
     syscall   #printing fn
+    li $v0, 4        
+    la $a0, newline #printing newline
+    syscall 
+    addi $t5, $t5, 1 #increase i by 1
+    j loop #jump back to loop 
 
         
      
