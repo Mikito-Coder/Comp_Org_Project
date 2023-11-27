@@ -12,3 +12,9 @@ main:
     li $v0, 5
     syscall
     move $t0, $v0
+    while:
+        bgt $t0, 24, exit
+        
+        li $v0, 4
+        la $a0, illegal
+        syscall
