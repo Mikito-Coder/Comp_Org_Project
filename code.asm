@@ -46,5 +46,12 @@ main:
      li $v0, 10
      syscall
 
+
+fib:
+    li $t0, 1 #fn 
+    li $t1, 1 #fn1
+    li $t2, 2 #fn2
+    move $t3, $a0 #takes the input integer from prompt and moves it to $
+
         
      
