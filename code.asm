@@ -18,3 +18,7 @@ main:
         li $v0, 4
         la $a0, illegal
         syscall
+
+	li $v0, 4
+        la $a0, prompt
+        syscall
