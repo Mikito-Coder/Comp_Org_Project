@@ -52,6 +52,13 @@ fib:
     li $t1, 1 #fn1
     li $t2, 2 #fn2
     move $t3, $a0 #takes the input integer from prompt and moves it to $
+    sub $t4, $t3, 2 #subtracts 2 from the value in $t3 and place it in $t4
+    li $v0,1
+    li $t5, 0 #counter starts at 0
+
+    beq $t3, 0, done #condition to check if n== 0 
+    bne $t3, 1, else #condition to check n!=1
+
 
         
      
